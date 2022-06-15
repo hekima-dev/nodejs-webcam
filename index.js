@@ -5,7 +5,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server)
 const cv = require('opencv4nodejs')
 const port = 3000
-const FPS = 10
+const FPS = 30
 
 const wCap = new cv.VideoCapture(0)
 wCap.set(cv.CAP_PROP_FRAME_WIDTH, 500)

@@ -35,6 +35,7 @@
 
         #image-container img {
             border-radius: 10px;
+            border: 5px solid #1565c0;
         }
 
         #live {
@@ -95,7 +96,8 @@
     </nav>
     <div id="image-container">
         <img id="image" />
-        <h3>live feed from camera 1 <div class="blink" id="live"></div> </h3>
+        <h3>live feed from camera 1 <div class="blink" id="live"></div>
+        </h3>
         <span id='ct'></span>
     </div>
 </body>
@@ -109,15 +111,15 @@
     })
 
     function display_c() {
-            var refresh = 1000; // Refresh rate in milli seconds
-            mytime = setTimeout('display_ct()', refresh)
-        }
+        const refresh = 1000; // Refresh rate in milli seconds
+        mytime = setTimeout('display_ct()', refresh)
+    }
 
-        function display_ct() {
-            var x = new Date()
-            document.getElementById('ct').innerHTML = x;
-            display_c();
-        }
+    function display_ct() {
+        const x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+    }
 </script>
 
 </html>
