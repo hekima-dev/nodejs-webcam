@@ -8,8 +8,8 @@ const port = 3000
 const FPS = 10
 
 const wCap = new cv.VideoCapture(0)
-wCap.set(cv.CAP_PROP_FRAME_WIDTH, 1000)
-wCap.set(cv.CAP_PROP_FRAME_HEIGHT, 1000)
+wCap.set(cv.CAP_PROP_FRAME_WIDTH, 500)
+wCap.set(cv.CAP_PROP_FRAME_HEIGHT, 500)
 
 app.get('/', (_request, response) => {
     response.sendFile(path.join(__dirname, './public/index.html'))
